@@ -12,9 +12,11 @@ void setup() {
   for (int i=0; i<img.pixels.length; i++) {
     color ip = img.pixels[i];
     // Strip off the most significant 4 bits of R, G, and B colors
-    ip = ip & ~clearMask;
+    //modify
+    ip;//
     // left shift and move the least significant 4 bits into the leftmost position.
-    ip = ip << 4;
+    //modify
+    ip;//
     // Replace the decoded pixel back into the picture
     img.pixels[i] = ip;
   }
